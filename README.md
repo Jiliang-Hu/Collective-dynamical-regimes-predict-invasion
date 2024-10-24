@@ -12,12 +12,14 @@ This script implements a generalized Lotka-Volterra (gLV) model to simulate micr
 Dependencies: There are no external function dependencies, as LV_compute_invasion is fully defined within this script.
 Input: Species interaction matrices and species pool size.
 Output: Time series data of species abundances and invasion success.
+
 2. pH_Invade.m
 This script extends the gLV model by introducing pH-mediated interactions, where pH impacts the growth rates and interaction strengths between species. It simulates how varying pH conditions influence invasion dynamics.
 
 Dependencies: As with LV_Invade.m, all necessary functions are self-contained.
 Input: Similar to LV_Invade.m, with additional parameters related to pH effects.
 Output: Time series data reflecting changes in community composition due to pH-mediated interactions.
+
 3. Hu-Merging-SeqWorkflow.R
 This R script processes raw sequencing data and generates amplicon sequence variants (ASVs) using the DADA2 pipeline. It is used to analyze microbial community compositions before and after invasions.
 
